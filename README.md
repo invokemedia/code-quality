@@ -11,6 +11,23 @@ If everyone on the team can get on board with a particular style, we can make it
 
 The standards outlined here are broken down into 2 groups: formatting and linting.
 
+## Git Hooks
+
+You can use git hooks in a project to make sure that certain actions are always run before you commit any code. To do this, you need to add a script to a special folder in your git project.
+
+Here is an example:
+
+```
+touch .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+This creates a new file under `.git/hooks/pre-commit` and then enabled execution on that file.
+
+If you do you the `pre-commit` hook, you will be unable to commit any code unless the script runs with `exit 0`. If there are any exit codes other than `0`, git will block you from committing.
+
+You can see an example of git hooks in use and how to write one using PHP `composer` under our [php-starter](https://github.com/invokemedia/php-starter) repo.
+
 ### PHP
 
 PHP has a community suggestions around different coding practices and standard. These are called *PHP Standard Recommendations* or *PSRs*.
