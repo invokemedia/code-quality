@@ -7,10 +7,6 @@ In order to help reduce cognitive overhead when joining a new project started by
 
 If everyone on the team can get on board with a particular style, we can make it easier to pass projects around and contribute to each others work.
 
-## Tools
-
-The standards outlined here are broken down into 2 groups: formatting and linting.
-
 ## Git Hooks
 
 You can use git hooks in a project to make sure that certain actions are always run before you commit any code. To do this, you need to add a script to a special folder in your git project.
@@ -28,6 +24,10 @@ If you do you the `pre-commit` hook, you will be unable to commit any code unles
 
 You can see an example of git hooks in use and how to write one using PHP `composer` under our [php-starter](https://github.com/invokemedia/php-starter) repo.
 
+## Tools
+
+The standards outlined here are broken down into 2 groups: formatting and linting.
+
 ### PHP
 
 PHP has a community suggestions around different coding practices and standard. These are called *PHP Standard Recommendations* or *PSRs*.
@@ -41,6 +41,8 @@ If you want to run the program from the command line, use the following command:
 ```
 phpcs -n --standard=PSR2 --extensions=php --colors path/to/code
 ```
+
+There is also a tool called [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) which will actually try and solve the issues for you without you having to do anything. This is akin to auto-formatting your code.
 
 #### Linting
 
