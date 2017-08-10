@@ -26,7 +26,7 @@ You can see an example of git hooks in use and how to write one using PHP `compo
 
 ## Tools
 
-The standards outlined here are broken down into 2 groups: formatting and linting.
+The standards outlined here are broken down into 3 groups: formatting, linting, and testing.
 
 ### PHP
 
@@ -75,6 +75,10 @@ You can setup the `phpmd` build tool in sublime with the following rule:
   "selector": "source.php"
 }
 ```
+
+#### Testing
+
+Testing in PHP is typically done with [phpunit](https://phpunit.de/). Most frameworks have a mechanism for testing. So use the testing protocol outlined by the framework in use.
 
 ### Javascript (and JSON)
 
@@ -134,6 +138,20 @@ The linting tool we use is called [jshint](http://jshint.com/). It is run using 
 Just like the tools above, you should set this program up in your editor to *run on save*.
 
 You can also add a `.jshintrc` file in your git project and the tool should look for that and use it.
+
+#### Testing
+
+##### Backend
+
+For unit testing, [node-tap](http://www.node-tap.org/) is extremely simple and easy to get started.
+
+*TODO: other testing types.*
+
+##### Frontend
+
+Our projects that require frontend testing typically use [nightwatchjs](http://nightwatchjs.org/). Nightwatch also allows you to take advantage of the [new headless browsing feature](https://developers.google.com/web/updates/2017/04/headless-chrome) in Chrome >58.
+
+Any frontend tests *should pass in all major browser versions*.
 
 ### Editorconfig
 
