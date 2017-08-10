@@ -151,6 +151,8 @@ For unit testing, [node-tap](http://www.node-tap.org/) is extremely simple and e
 
 Our projects that require frontend testing typically use [nightwatchjs](http://nightwatchjs.org/). Nightwatch also allows you to take advantage of the [new headless browsing feature](https://developers.google.com/web/updates/2017/04/headless-chrome) in Chrome >58.
 
+You can also run tests in [phantomjs](http://phantomjs.org/), which doesn't boot up a browser at all. But you should be careful with this as it is not a replacement for a real browser test.
+
 Any frontend tests *should pass in all major browser versions*.
 
 ### Editorconfig
