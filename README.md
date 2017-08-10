@@ -1,22 +1,21 @@
 # Invoke Code Formatting & Quality Rules
+### Why?
 In order to help reduce cognitive overhead when joining a new project started by another developer, we apply coding standards and formatting to all our code.
 
 If everyone on the team can get on board with a particular style, we can make it easier to pass projects around and contribute to each others work.
 
+## Tools
 The standards outlined here are broken down into 2 groups: formatting and linting.
 
 ### PHP
-
 PHP has a community suggestions around different coding practices and standard. These are called *PHP Standard Recommendations* or *PSRs*.
 
 #### Formating
-
 Formatting for PHP code should be in the format described in [PSR-2](http://www.php-fig.org/psr/psr-2/). You should install and setup [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) in your editor of choice and set the tool *to run on save*. You should make sure that the `--standard=PSR2` flag is always used when the command is run.
 
 If you want to run the program from the command line, use the following command: `phpcs -n --standard=PSR2 --extensions=php --colors path/to/code`.
 
 #### Linting
-
 The PHP command line binary has a built-in linter. You can invoke it with `php -l`. By default, the linter does not accept multiple files. You can use the following command to lint a folder of files:
 
 ```
@@ -48,11 +47,9 @@ You can setup the `phpmd` build tool in sublime with the following rule:
 ```
 
 ### Javascript (and JSON)
-
 There are a variety of javascript linting and formatting tools. We will only cover one for each category.
 
 #### Formatting
-
 The first tool to setup is [js-beautify](https://github.com/beautify-web/js-beautify). This tool will format javascript and JSON files to make them easier to read and also easy to debug.
 
 These are the rules for the formatter that Invoke uses:
@@ -79,7 +76,6 @@ These are the rules for the formatter that Invoke uses:
 You should install the tool as a plugin in your editor and set the formatting to *apply on save*.
 
 #### Linting
-
 The linting tool we use is called [jshint](http://jshint.com/). It is run using the following rules:
 
 ```
@@ -107,7 +103,6 @@ Just like the tools above, you should set this program up in your editor to *run
 You can also add a `.jshintrc` file in your git project and the tool should look for that and use it.
 
 ### Editorconfig
-
 [Editorconfig](http://editorconfig.org/) is a cross-platform editor plugin to adjust your editor to handle files in a specific way.
 
 It will look for a file called `.editorconfig` in the root of your project and then apply those settings to the editor.
