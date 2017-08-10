@@ -19,7 +19,11 @@ PHP has a community suggestions around different coding practices and standard. 
 
 Formatting for PHP code should be in the format described in [PSR-2](http://www.php-fig.org/psr/psr-2/). You should install and setup [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) in your editor of choice and set the tool *to run on save*. You should make sure that the `--standard=PSR2` flag is always used when the command is run.
 
-If you want to run the program from the command line, use the following command: `phpcs -n --standard=PSR2 --extensions=php --colors path/to/code`.
+If you want to run the program from the command line, use the following command:
+
+```
+phpcs -n --standard=PSR2 --extensions=php --colors path/to/code
+```
 
 #### Linting
 
