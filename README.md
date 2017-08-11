@@ -132,7 +132,6 @@ The linting tool we use is called [jshint](http://jshint.com/). It is run using 
   "browserify": true,
   "node": true,
   "esnext": true,
-  "esversion": 6,
   "jquery": true,
   "node": true,
   "globals": {
