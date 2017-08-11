@@ -76,6 +76,16 @@ You can setup the `phpmd` build tool in sublime with the following rule:
 }
 ```
 
+#### Additional Tools
+
+If you are not using an IDE, but are using a text editor like vim, atom, or sublime, then you should consider installing [padawan](https://github.com/padawan-php/padawan.php).
+
+From the docs:
+
+> Padawan.php is an http server that parses your project and gives you completions. Padawan.php looks recursively for all php files of a composer project, parses doc-comments and function declarations of each class and creates an index from them. After that it autoupdates the index and gives you completion as you type.
+
+You can use this tool in lieu of a full IDE.
+
 #### Testing
 
 Testing in PHP is typically done with [phpunit](https://phpunit.de/). Most frameworks have a mechanism for testing. So use the testing protocol outlined by the framework in use.
