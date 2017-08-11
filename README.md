@@ -139,6 +139,20 @@ Just like the tools above, you should set this program up in your editor to *run
 
 You can also add a `.jshintrc` file in your git project and the tool should look for that and use it.
 
+#### Additional Tools
+
+If you are not using an IDE, but are using a text editor like vim, atom, or sublime, then you should consider installing [ternjs](http://ternjs.net/).
+
+Tern is a stand-alone code-analysis engine for JavaScript. It is intended to be used with a code editor plugin to enhance the editor's support for intelligent JavaScript editing. Features provided are:
+
+* Autocompletion on variables and properties
+* Function argument hints
+* Querying the type of an expression
+* Finding the definition of something
+* Automatic refactoring
+
+This can be incredibly helpful as you can essentially add IDE-like features to your projects. For example, if you want to use `Array.reduce`, but you forget the arguments, tern can show you the arguments, their types, and also a link to [documentation at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference). It can also infer types for your own functions and methods that exist in your projects.
+
 #### Testing
 
 ##### Backend
