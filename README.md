@@ -1,7 +1,7 @@
 Code Formatting & Quality Rules
 ===============================
 
-### Why?
+## Why?
 
 In order to help reduce cognitive overhead when joining a new project started by another developer, we apply coding standards and formatting to all our code.
 
@@ -27,6 +27,8 @@ You can see an example of git hooks in use and how to write one using PHP `compo
 ## Tools
 
 The standards outlined here are broken down into 3 groups: formatting, linting, and testing.
+
+**Note**: It seems like the Atom editor can be pretty difficult to configure with some of these tools. You have been warned.
 
 ### PHP
 
