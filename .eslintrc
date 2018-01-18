@@ -1,0 +1,52 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "func-names": [
+            "error",
+            "never"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "MemberExpression": 1
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            "off"
+        ],
+        "max-len": [
+            "warn",
+            120
+        ],
+        "no-shadow": [
+            "error",
+            {
+                "builtinGlobals": false,
+                "hoist": "functions",
+                "allow": [
+                    "callback",
+                    "cb",
+                    "state"
+                ]
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "ignorePropertyModificationsFor": [
+                    "callback",
+                    "cb",
+                    "state"
+                ]
+            }
+        ],
+        "comma-dangle": ["error", {
+            "arrays": "only-multiline",
+            "objects": "always-multiline",
+            "imports": "only-multiline",
+            "exports": "only-multiline",
+            "functions": "ignore"
+        }]
+    }
+}
